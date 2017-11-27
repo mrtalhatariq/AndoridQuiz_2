@@ -13,6 +13,8 @@ public class DbFunctions {
 	private static Activity c;
 	private String current;
 
+
+
 	public DbFunctions(Activity con) {
 		c = con;
 	}
