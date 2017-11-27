@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_20dp"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etEmail_Signup"
+            style="@style/Simple_Edittext_Style_"
+            android:hint="@string/txt_email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etPassword_Signup"
+            style="@style/Simple_Edittext_Style_"
+            android:inputType="textPassword"
+            android:hint="@string/txt_password"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etFirstnameSignup"
+            style="@style/Simple_Edittext_Style_"
+            android:hint="@string/txt_firstname"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etLastname_Signup"
+            style="@style/Simple_Edittext_Style_"
+            android:hint="@string/txt_lastname"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/etMobileNo_Signup"
+            style="@style/Simple_Edittext_Style_"
+            android:hint="@string/txt_mobileno"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Spinner
+        android:id="@+id/spinnerUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+    </Spinner>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSignUp"
+        android:text="@string/txt_signup"/>
+</LinearLayout>
