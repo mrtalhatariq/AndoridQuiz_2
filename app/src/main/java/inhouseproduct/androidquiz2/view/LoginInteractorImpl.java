@@ -59,7 +59,7 @@ public class LoginInteractorImpl implements LoginInteractor {
 
                 if (!error){
 
-                    userList= DbFunctions.getUserByEmailAndPassword(email,password);
+
                     if(userList.size()>0) {
                         listener.onSuccess(userList.get(0).getId());
                     }

@@ -14,7 +14,7 @@ public class ItemsInteractorImpl implements ItemsInteractor {
 
         for (int i = 0; i < createArrayList().size(); i++) {
 
-            DbOps.insert(new UserType(createArrayList().get(i)));
+//            DbOps.insert(new UserType(createArrayList().get(i)));
 
 
         }

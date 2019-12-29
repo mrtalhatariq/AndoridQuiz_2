@@ -80,10 +80,10 @@ public class HomeScreenFragment extends Fragment implements View.OnClickListener
         Bundle recvBundle=getArguments();
 
         id=recvBundle.getInt("Id");
-        userDataList= DbFunctions.getUserById(id);
-
-        tvName.setText(userDataList.get(0).getFirstName()+" "+userDataList.get(0).getLastName());
-        tvMobileNumber.setText(userDataList.get(0).getMobileNumber());
+//        userDataList= DbFunctions.getUserById(id);
+//
+//        tvName.setText(userDataList.get(0).getFirstName()+" "+userDataList.get(0).getLastName());
+//        tvMobileNumber.setText(userDataList.get(0).getMobileNumber());
 
     }
 

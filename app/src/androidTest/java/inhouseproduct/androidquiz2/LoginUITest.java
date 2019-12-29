@@ -2,10 +2,13 @@ package inhouseproduct.androidquiz2;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.SystemClock;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -16,6 +19,7 @@ import java.util.ArrayList;
 import inhouseproduct.androidquiz2.DB.DbFunctions;
 import inhouseproduct.androidquiz2.DB.DbOps;
 import inhouseproduct.androidquiz2.DB.models.User;
+import inhouseproduct.androidquiz2.fragments.HomeScreenFragment;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
@@ -36,6 +40,8 @@ public class LoginUITest {
     Context appContext;
     private String email,password;
 
+    @Rule
+    public ActivityTestRule<MainActivity> activityActivityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
 
     @Test
     public void useAppContext() throws Exception {
@@ -66,6 +72,24 @@ public class LoginUITest {
 
         onView(withId(R.id.btnLogin)).perform(click());
 
+
+
+        SystemClock.sleep(1500);
+
+
+        activityActivityTestRule.getActivity()
+                .getFragmentManager().beginTransaction();
+
+        SystemClock.sleep(2000);
     }
+
+    @After
+    public void MainPage()
+    {
+
+
+    }
+
+
 
 }
